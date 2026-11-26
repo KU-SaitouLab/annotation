@@ -29,8 +29,6 @@ bed=par_GRCh38p12.bed
 # Mask chrY PAR regions with N (done manually for GRCh38.p12)
 bedtools maskfasta -fi ${fa} -bed ${bed} -fo ${fa%.fa}_PARN.fa
 ```
-> **Note:** In the original notes, the output filename used `${fa%.bed}_PARN.fa`; this has been corrected to `${fa%.fa}_PARN.fa` to properly strip the `.fa` extension.
-
 ---
 
 ## 2. Transcript Reference (GFF3) Preparation
